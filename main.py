@@ -45,11 +45,11 @@ model = genai.GenerativeModel(
 # =========================================
 # HOME
 # =========================================
+
+
 @app.get("/")
-def home():
+async def home():
     return FileResponse("index.html")
-
-
 # =========================================
 # HEALTH CHECK
 # =========================================
